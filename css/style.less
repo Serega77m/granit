@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-family: 'Gotham Pro Regular';
+}
+
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('GothamPro.eot');
+    src: url('GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('GothamPro.woff') format('woff'),
+    url('GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@white: #fff;
+.button {
+    width: 180px;
+    height: 45px;
+    background-color: #ffd200;
+    border: none;
+    font-size: 16px;
+}
+
+header {
+    background-color: @white;
+    margin-top: 30px;
+    .logo_block {
+        display: flex;
+        margin: 0 23%;
+        margin-bottom: 3%;
+        .granit-logo {
+            display: flex;
+            span {
+                margin-left: 20px;
+            }
+
+        }
+        button {
+            margin-left: auto;
+            border-style: solid 2px;
+            border-color: black;  
+            background-color: @white;  
+            width: 160px; 
+            &:hover {
+                background-color: #ffcc00;  
+            }    
+        }
+    }
+    .granit_tel {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        a {
+            text-decoration: none;
+            display: block;
+            margin-left: auto;
+            color: black !important;
+        }
+        span {
+            margin-right: 0;
+        }
+    }
+    
+}  
+
+.navbar {
+    width: 45%;
+    margin: 0 25%;
+    background-color: #ffcc00;
+    margin-top: 20px;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -2%;
+    .menu   {
+        ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+        }
+    }
+}
+
+.slider {
+        background-image: url(../img/traktor.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 550px;
+        background-color: #303030;
+        .fast {
+            margin-right: 30%;
+            h1 {
+                font-size: 36px;
+                margin-top: 0;
+                display: block;
+                margin-bottom: 0;
+                color: @white;
+            } 
+            p {
+                font-size: 16px;
+                display: block;
+                margin-top: 50px;
+                color: #cdcac9;
+            }
+
+        } 
+        .more_details {
+            margin-right: 28.8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p,a {
+                display: block;
+                margin-left: 10px;
+                color:@white;
+            }
+            button {
+                height: 50px;
+                background-color: rgb( 255, 210, 0 ); 
+                border: solid  0; 
+            }
+            
+        } 
+        
+}
+
+.container-always {
+    background: @white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 115px;
+    .always {
+        margin-top: 65px;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 75%;
+        grid-template-columns: repeat(3,25%);
+        h3 {
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        }
+        .pesok, .sheben, .grunt {
+            .price {
+                text-align: center;
+                padding-top: 35px;
+                font-size: 16px; 
+            }
+            .button_more {
+                text-align: center;
+                margin: auto;
+                padding-top: 35px;
+                button {
+                .button()
+                }
+            }
+
+        }
+        p {
+            display: block;
+            font-size: 12px;
+            color: #acacac;
+        }
+
+    }
+
+}
+
+.container-advantages  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #f4f4f4;
+    
+
+    .advantages-text{
+        margin-top: 80px;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+    .list-advantages {
+        display: grid;
+        justify-content:space-between;
+        text-align: center;
+        margin: 0 18%;
+        margin-top: 60px;
+        grid-template-columns: repeat(3,25%);
+        margin-bottom: 80px;
+        .lowprice, .fast-delivery, .individual {
+            text-align: center;
+            padding-top: 50px;
+            justify-content: space-between;
+            .image-advantages{
+                text-align: center;
+            } 
+            .advantages-subtitle {
+                text-align: center;
+                font-size: 15px;
+                margin-top: 45px;
+            }
+            .subscription {
+                text-align: center;
+                font-size: 12px;
+                padding-top: 25px;
+                padding-bottom: 40px;
+            }
+        }
+        
+    }
+}
+
+.container-goods {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    .popular-goods {
+        margin-top: 80px;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+    .list-goods {
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        margin: 0 18%;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        .granit-sheben {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .granit-image {
+                img {
+                    width: 180px;
+                    height: 150px;
+                }
+
+            }
+            .granit-subtitle { 
+                font-size: 13px;
+                text-align: center;
+                padding-top: 25px;
+                text-decoration: underline ;
+
+            }
+            .granit-price {
+                text-align: center;
+                padding-top: 25px;
+                font-size: 16px;
+            }
+            .granit-button {
+                text-align: center;
+                margin: auto;
+                padding-top: 35px;
+                button {
+                .button();
+                }   
+                
+                
+            }
+        }
+    }
+
+}
+
+.container-services {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    .our-services{ 
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 80px;
+
+    }
+    .list-services {
+        display: grid;
+        justify-content:space-evenly;
+        text-align: center;
+        margin: 0 18%;
+        margin-top: 60px;
+        grid-template-columns: repeat(3,25%);
+        margin-bottom: 80px;
+        .service {
+         text-align: center;
+         padding-top: 50px;
+         justify-content: space-between;
+         margin: auto;
+            .image-service {
+                width: 200px;
+                height: 100px;
+            }
+            .title-service {
+                font-size: 15px;
+                text-align: center;
+                margin-top: 40px;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+        .service3 {
+            text-align: center;
+            padding-top: 35px;
+            justify-content: space-between;
+            margin: auto;
+            .image-service {
+                width: 200px;
+                height: 100px;
+            }
+            .title-service {
+                font-size: 15px;
+                text-align: center;
+                margin-top: 53px;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }   
+        }
+
+    }
+}
+
+footer {
+    background-color: #292929;
+    .footer-contact {
+        margin: 0 18%;
+        .granit-logo {
+            padding-top: 50px;
+            span {
+                color: @white;
+            }
+        }
+        .year   {
+            margin-top: 40px;
+            color: @white;
+        }
+
+    }
+}

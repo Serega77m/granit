@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Gotham Pro Regular';
+}
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('GothamPro.eot');
+  src: url('GothamPro.eot?#iefix') format('embedded-opentype'), url('GothamPro.woff') format('woff'), url('GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.button {
+  width: 180px;
+  height: 45px;
+  background-color: #ffd200;
+  border: none;
+  font-size: 16px;
+}
+header {
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+header .logo_block {
+  display: flex;
+  margin: 0 23%;
+  margin-bottom: 3%;
+}
+header .logo_block .granit-logo {
+  display: flex;
+}
+header .logo_block .granit-logo span {
+  margin-left: 20px;
+}
+header .logo_block button {
+  margin-left: auto;
+  border-style: solid 2px;
+  border-color: black;
+  background-color: #ffffff;
+  width: 160px;
+}
+header .logo_block button:hover {
+  background-color: #ffcc00;
+}
+header .granit_tel {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+header .granit_tel a {
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  color: black !important;
+}
+header .granit_tel span {
+  margin-right: 0;
+}
+.navbar {
+  width: 45%;
+  margin: 0 25%;
+  background-color: #ffcc00;
+  margin-top: 20px;
+  flex-direction: row;
+  position: absolute;
+  margin-top: -2%;
+}
+.navbar .menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0;
+}
+.navbar .menu ul li {
+  list-style-type: none;
+}
+.navbar .menu ul li a {
+  text-decoration: none;
+}
+.slider {
+  background-image: url(../img/traktor.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+  background-color: #303030;
+}
+.slider .fast {
+  margin-right: 30%;
+}
+.slider .fast h1 {
+  font-size: 36px;
+  margin-top: 0;
+  display: block;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.slider .fast p {
+  font-size: 16px;
+  display: block;
+  margin-top: 50px;
+  color: #cdcac9;
+}
+.slider .more_details {
+  margin-right: 28.8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .more_details p,
+.slider .more_details a {
+  display: block;
+  margin-left: 10px;
+  color: #ffffff;
+}
+.slider .more_details button {
+  height: 50px;
+  background-color: #ffd200;
+  border: solid  0;
+}
+.container-always {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 115px;
+}
+.container-always .always {
+  margin-top: 65px;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  grid-template-columns: repeat(3, 25%);
+}
+.container-always .always h3 {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+.container-always .always .pesok .price,
+.container-always .always .sheben .price,
+.container-always .always .grunt .price {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 16px;
+}
+.container-always .always .pesok .button_more,
+.container-always .always .sheben .button_more,
+.container-always .always .grunt .button_more {
+  text-align: center;
+  margin: auto;
+  padding-top: 35px;
+}
+.container-always .always .pesok .button_more button,
+.container-always .always .sheben .button_more button,
+.container-always .always .grunt .button_more button {
+  width: 180px;
+  height: 45px;
+  background-color: #ffd200;
+  border: none;
+  font-size: 16px;
+}
+.container-always .always p {
+  display: block;
+  font-size: 12px;
+  color: #acacac;
+}
+.container-advantages {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #f4f4f4;
+}
+.container-advantages .advantages-text {
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+.container-advantages .list-advantages {
+  display: grid;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 18%;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 25%);
+  margin-bottom: 80px;
+}
+.container-advantages .list-advantages .lowprice,
+.container-advantages .list-advantages .fast-delivery,
+.container-advantages .list-advantages .individual {
+  text-align: center;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.container-advantages .list-advantages .lowprice .image-advantages,
+.container-advantages .list-advantages .fast-delivery .image-advantages,
+.container-advantages .list-advantages .individual .image-advantages {
+  text-align: center;
+}
+.container-advantages .list-advantages .lowprice .advantages-subtitle,
+.container-advantages .list-advantages .fast-delivery .advantages-subtitle,
+.container-advantages .list-advantages .individual .advantages-subtitle {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 45px;
+}
+.container-advantages .list-advantages .lowprice .subscription,
+.container-advantages .list-advantages .fast-delivery .subscription,
+.container-advantages .list-advantages .individual .subscription {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.container-goods {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.container-goods .popular-goods {
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+.container-goods .list-goods {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 18%;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.container-goods .list-goods .granit-sheben {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container-goods .list-goods .granit-sheben .granit-image img {
+  width: 180px;
+  height: 150px;
+}
+.container-goods .list-goods .granit-sheben .granit-subtitle {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 25px;
+  text-decoration: underline ;
+}
+.container-goods .list-goods .granit-sheben .granit-price {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 16px;
+}
+.container-goods .list-goods .granit-sheben .granit-button {
+  text-align: center;
+  margin: auto;
+  padding-top: 35px;
+}
+.container-goods .list-goods .granit-sheben .granit-button button {
+  width: 180px;
+  height: 45px;
+  background-color: #ffd200;
+  border: none;
+  font-size: 16px;
+}
+.container-services {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+.container-services .our-services {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+.container-services .list-services {
+  display: grid;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 18%;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 25%);
+  margin-bottom: 80px;
+}
+.container-services .list-services .service {
+  text-align: center;
+  padding-top: 50px;
+  justify-content: space-between;
+  margin: auto;
+}
+.container-services .list-services .service .image-service {
+  width: 200px;
+  height: 100px;
+}
+.container-services .list-services .service .title-service {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.container-services .list-services .service3 {
+  text-align: center;
+  padding-top: 35px;
+  justify-content: space-between;
+  margin: auto;
+}
+.container-services .list-services .service3 .image-service {
+  width: 200px;
+  height: 100px;
+}
+.container-services .list-services .service3 .title-service {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 53px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+footer {
+  background-color: #292929;
+}
+footer .footer-contact {
+  margin: 0 18%;
+}
+footer .footer-contact .granit-logo {
+  padding-top: 50px;
+}
+footer .footer-contact .granit-logo span {
+  color: #ffffff;
+}
+footer .footer-contact .year {
+  margin-top: 40px;
+  color: #ffffff;
+}
